@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ADViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
+- (IBAction)buttonPressed;
 
 @end

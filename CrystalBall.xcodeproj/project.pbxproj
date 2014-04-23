@@ -112,8 +112,6 @@
 		78C65BA019071BB40095EE2F /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				78C65BA919071BB40095EE2F /* ADAppDelegate.h */,
-				78C65BAA19071BB40095EE2F /* ADAppDelegate.m */,
 				78C65BAC19071BB40095EE2F /* Main.storyboard */,
 				78C65BAF19071BB40095EE2F /* ADViewController.h */,
 				78C65BB019071BB40095EE2F /* ADViewController.m */,
@@ -126,6 +124,8 @@
 		78C65BA119071BB40095EE2F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				78C65BA919071BB40095EE2F /* ADAppDelegate.h */,
+				78C65BAA19071BB40095EE2F /* ADAppDelegate.m */,
 				78C65BA219071BB40095EE2F /* CrystalBall-Info.plist */,
 				78C65BA319071BB40095EE2F /* InfoPlist.strings */,
 				78C65BA619071BB40095EE2F /* main.m */,
