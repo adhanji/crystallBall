@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		786F3D48190C960D00F073BB /* ADCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = 786F3D47190C960D00F073BB /* ADCrystalBall.m */; };
 		78C65B9B19071BB40095EE2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C65B9A19071BB40095EE2F /* Foundation.framework */; };
 		78C65B9D19071BB40095EE2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C65B9C19071BB40095EE2F /* CoreGraphics.framework */; };
 		78C65B9F19071BB40095EE2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C65B9E19071BB40095EE2F /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		786F3D46190C960D00F073BB /* ADCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADCrystalBall.h; sourceTree = "<group>"; };
+		786F3D47190C960D00F073BB /* ADCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADCrystalBall.m; sourceTree = "<group>"; };
 		78C65B9719071BB40095EE2F /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78C65B9A19071BB40095EE2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78C65B9C19071BB40095EE2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				78C65BB019071BB40095EE2F /* ADViewController.m */,
 				78C65BB219071BB40095EE2F /* Images.xcassets */,
 				78C65BA119071BB40095EE2F /* Supporting Files */,
+				786F3D46190C960D00F073BB /* ADCrystalBall.h */,
+				786F3D47190C960D00F073BB /* ADCrystalBall.m */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786F3D48190C960D00F073BB /* ADCrystalBall.m in Sources */,
 				78C65BA719071BB40095EE2F /* main.m in Sources */,
 				78C65BB119071BB40095EE2F /* ADViewController.m in Sources */,
 				78C65BAB19071BB40095EE2F /* ADAppDelegate.m in Sources */,
@@ -457,6 +463,7 @@
 				78C65BCB19071BB40095EE2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78C65BCC19071BB40095EE2F /* Build configuration list for PBXNativeTarget "CrystalBallTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				78C65BCE19071BB40095EE2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

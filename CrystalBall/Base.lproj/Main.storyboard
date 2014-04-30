@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -16,27 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It is decidedly so" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TnL-bj-bJT">
-                                <rect key="frame" x="20" y="118" width="280" height="60"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="sIf-PB-tO7">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="239" translatesAutoresizingMaskIntoConstraints="NO" id="TnL-bj-bJT">
+                                <rect key="frame" x="41" y="178" width="239" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="239" id="2NF-Jo-CBk"/>
+                                    <constraint firstAttribute="height" constant="150" id="o4j-my-Gfn"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03t-6A-Jud">
-                                <rect key="frame" x="20" y="269" width="280" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03t-6A-Jud">
+                                <rect key="frame" x="29" y="501" width="261" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Predict">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="261" id="7s1-cd-vyf"/>
+                                    <constraint firstAttribute="height" constant="47" id="vu1-kC-pR6"/>
+                                </constraints>
+                                <state key="normal" image="button-off">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="highlighted" image="button-on"/>
                                 <connections>
                                     <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fBH-JO-6NP"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="03t-6A-Jud" secondAttribute="bottom" constant="20" id="0oO-7r-eoR"/>
+                            <constraint firstAttribute="centerX" secondItem="03t-6A-Jud" secondAttribute="centerX" id="4kQ-Da-Q3e"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="sIf-PB-tO7" secondAttribute="bottom" id="NN8-cT-UmB"/>
+                            <constraint firstItem="sIf-PB-tO7" firstAttribute="centerY" secondItem="TnL-bj-bJT" secondAttribute="centerY" constant="31" id="ZeO-3G-sg8"/>
+                            <constraint firstAttribute="trailing" secondItem="sIf-PB-tO7" secondAttribute="trailing" id="cM9-gk-btd"/>
+                            <constraint firstItem="sIf-PB-tO7" firstAttribute="centerX" secondItem="TnL-bj-bJT" secondAttribute="centerX" constant="-0.5" id="cbB-nC-a8e"/>
+                            <constraint firstItem="sIf-PB-tO7" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="vdD-lX-lg2"/>
+                            <constraint firstItem="sIf-PB-tO7" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="yts-Gr-qjR"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="predictionLabel" destination="TnL-bj-bJT" id="X6P-vi-oSE"/>
@@ -46,6 +68,11 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="320" height="568"/>
+        <image name="button-off" width="261" height="49"/>
+        <image name="button-on" width="261" height="47"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

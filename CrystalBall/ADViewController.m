@@ -7,6 +7,7 @@
 //
 
 #import "ADViewController.h"
+#import "ADCrystalBall.h"
 
 @interface ADViewController ()
 
@@ -17,6 +18,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.crystalBall = [[ADCrystalBall alloc] init];
+    
+    
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -27,7 +32,32 @@
 }
 
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
+}
+
+- (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    self.predictionLabel.text = nil;
+}
+
+- (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    if (motion == UIEventSubtypeMotionShake)
+        self.predictionLabel.text = [self.crystalBall randomPrediction];
+}
+
+- (void) motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    NSLog(@"Motion cancelled");
+}
+
+- (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.predictionLabel.text = nil;
+}
+
+- (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
+}
+
+- (void) touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
+    NSLog(@"Touch cancelled");
 }
 
 @end
