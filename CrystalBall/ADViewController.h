@@ -13,6 +13,8 @@
 @interface ADViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UILabel *predictionLabel;
 @property (strong, nonatomic) ADCrystalBall *crystalBall;
-- (IBAction)buttonPressed;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+- (void) makePrediction;
 
 @end
