@@ -22,6 +22,8 @@
 		78C65BBC19071BB40095EE2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C65B9E19071BB40095EE2F /* UIKit.framework */; };
 		78C65BC419071BB40095EE2F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78C65BC219071BB40095EE2F /* InfoPlist.strings */; };
 		78C65BC619071BB40095EE2F /* CrystalBallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C65BC519071BB40095EE2F /* CrystalBallTests.m */; };
+		78DD306B19230D9D00B57586 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78DD306A19230D9D00B57586 /* crystal_ball.mp3 */; };
+		78DD306D19230E1A00B57586 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78DD306C19230E1A00B57586 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		78C65BC119071BB40095EE2F /* CrystalBallTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrystalBallTests-Info.plist"; sourceTree = "<group>"; };
 		78C65BC319071BB40095EE2F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78C65BC519071BB40095EE2F /* CrystalBallTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CrystalBallTests.m; sourceTree = "<group>"; };
+		78DD306A19230D9D00B57586 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		78DD306C19230E1A00B57586 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78DD306D19230E1A00B57586 /* AudioToolbox.framework in Frameworks */,
 				78C65B9D19071BB40095EE2F /* CoreGraphics.framework in Frameworks */,
 				78C65B9F19071BB40095EE2F /* UIKit.framework in Frameworks */,
 				78C65B9B19071BB40095EE2F /* Foundation.framework in Frameworks */,
@@ -104,6 +109,7 @@
 		78C65B9919071BB40095EE2F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				78DD306C19230E1A00B57586 /* AudioToolbox.framework */,
 				78C65B9A19071BB40095EE2F /* Foundation.framework */,
 				78C65B9C19071BB40095EE2F /* CoreGraphics.framework */,
 				78C65B9E19071BB40095EE2F /* UIKit.framework */,
@@ -119,6 +125,7 @@
 				78C65BAF19071BB40095EE2F /* ADViewController.h */,
 				78C65BB019071BB40095EE2F /* ADViewController.m */,
 				78C65BB219071BB40095EE2F /* Images.xcassets */,
+				78DD306A19230D9D00B57586 /* crystal_ball.mp3 */,
 				78C65BA119071BB40095EE2F /* Supporting Files */,
 				786F3D46190C960D00F073BB /* ADCrystalBall.h */,
 				786F3D47190C960D00F073BB /* ADCrystalBall.m */,
@@ -205,6 +212,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Aleem Dhanji";
 				TargetAttributes = {
+					78C65B9619071BB40095EE2F = {
+						DevelopmentTeam = 9S5V9KU7RS;
+					};
 					78C65BB719071BB40095EE2F = {
 						TestTargetID = 78C65B9619071BB40095EE2F;
 					};
@@ -236,6 +246,7 @@
 			files = (
 				78C65BB319071BB40095EE2F /* Images.xcassets in Resources */,
 				78C65BA519071BB40095EE2F /* InfoPlist.strings in Resources */,
+				78DD306B19230D9D00B57586 /* crystal_ball.mp3 in Resources */,
 				78C65BAE19071BB40095EE2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -383,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
@@ -396,6 +408,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
