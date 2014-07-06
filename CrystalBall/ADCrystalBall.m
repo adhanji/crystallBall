@@ -12,15 +12,17 @@
 
 - (NSArray *) predictions {
     if (_predictions == nil) {
-        _predictions = [[NSArray alloc] initWithObjects:@"It is Certain",
-                        @"It is Decidedly so",
-                        @"All signs say YES",
-                        @"The stars are not aligned",
-                        @"My reply is no",
-                        @"It is doubtful",
-                        @"Better not tell you now",
+        _predictions = [[NSArray alloc] initWithObjects:@"I doubt it!",
+                        @"Sure. Why not eh?",
+                        @"Let me think about that",
+                        @"That is never going to happen!",
+                        @"Of course!",
+                        @"All signs say yes",
+                        @"There's a pretty good chance",
+                        @"I don't think so",
+                        @"Are you sure you want to know?",
                         @"Concentrate and ask again",
-                        @"Unable to answer now", nil];
+                        @"I'm busy right now", nil];
     }
     
     return _predictions;
